@@ -1,0 +1,36 @@
+{
+    "name": "enlitepro/enlite-seo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Struts Ulazdimir",
+            "email": "sysaninster@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "framework",
+        "zf2",
+        "SEO",
+        "helper",
+        "zend framework 2"
+    ],
+    "require": {
+        "php":                                  ">=5.4",
+        "zendframework/zendframework":          "~2.2",
+        "doctrine/doctrine-orm-module":         "~0.8",
+        "doctrine/doctrine-module":             "~0.8"
+    },
+    "suggest": {
+        "doctrine/cache":                       "~1.0",
+        "enlitepro/enlite-admin":               "~1.1"
+    },
+    "require-dev": {
+        "enlitepro/zf2-scaffold":               "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "EnliteSeo": "src"
+        }
+    }
+}
