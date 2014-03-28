@@ -18,13 +18,14 @@ class Seo implements SeoInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Form\Type("hidden")
      * @Form\Exclude
      */
     protected $id = null;
 
     /**
      * @ORM\Column(type="string")
-     *
+     * @Form\Options({"label": "Name"})
      * @var string
      */
     protected $name = '';
@@ -32,14 +33,14 @@ class Seo implements SeoInterface
     /**
      * @var string
      * @ORM\Column(type="string", unique=true)
-     * @Form\Options({"label": "Шаблон (regexp)"})
+     * @Form\Options({"label": "Pattern (regexp)"})
      */
     protected $pattern = '';
 
     /**
      * @var string
      * @ORM\Column(type="string")
-     * @Form\Options({"label": "Заголовок"})
+     * @Form\Options({"label": "Title"})
      */
     protected $title = '';
 
@@ -61,7 +62,8 @@ class Seo implements SeoInterface
 
     /**
      * @ORM\Column(type="integer")
-     *
+     * @Form\Type("number")
+     * @Form\Options({"label": "Weight"})
      * @var int
      */
     protected $weight = 0;

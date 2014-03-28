@@ -4,7 +4,6 @@ return array(
     'service_manager' => array(
         'factories' => array(
             'EnliteSeoService' => 'EnliteSeo\Service\SeoServiceFactory',
-            'EnliteSeoForm' => 'EnliteSeo\Form\SeoFormFactory',
             'EnliteSeoGlobalOptions' => 'EnliteSeo\Options\GlobalOptionsFactory'
         ),
         'invokables' => array(

@@ -27,6 +27,19 @@ return array(
             )
         ),
     ),
+    'admin' => [
+        'entities' => array(
+            'seo' => array(
+                'entity' => 'EnliteSeo\Entity\Seo',
+                'fields' => ['id', 'name', 'pattern', 'weight'],
+                'allow' => ['create', 'list', 'edit', 'remove'],
+                'title' => 'Seo',
+                'order' => [
+                    'weight' => 'desc',
+                ]
+            ),
+        ),
+    ],
 //    'view_manager' => array(
 //        'template_path_stack' => array(
 //            __DIR__ . '/../view',
