@@ -58,6 +58,9 @@ class Seo extends AbstractHelper implements ServiceLocatorAwareInterface
      */
     public function getRequest()
     {
+        if (is_null($this->request)) {
+            $this->request = $this->getServiceLocator()->get('request');
+        }
         return $this->request;
     }
 

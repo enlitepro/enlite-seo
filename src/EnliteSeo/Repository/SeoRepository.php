@@ -24,8 +24,9 @@ class SeoRepository extends EntityRepository
     {
         $builder = $this->createQueryBuilder('seo');
         $builder->where(
-            'REGEXP(:url, seo.regexp)'
+            'REGEXP(:url, seo.pattern) = 1'
         );
+        $builder->setParameter(':url', $url);
         $builder->orderBy('seo.weight', 'desc');
         $builder->setMaxResults(1);
 

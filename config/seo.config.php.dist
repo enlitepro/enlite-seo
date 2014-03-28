@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'EnliteSeo' => [
+        'default_title' => 'ZF2',
+        'default_keywords' => '',
+        'default_description' => '',
+        'entity' => 'EnliteSeo\Entity\Seo',
+    ]
+];

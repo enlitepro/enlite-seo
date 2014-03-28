@@ -6,8 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Zend\Form\Annotation as Form;
 
 /**
- * @ORM\Entity(repositoryClass="Application\Repository\SeoRepository")
- * @ORM\Table(name="seo_attributes")
+ * @ORM\Entity(repositoryClass="EnliteSeo\Repository\SeoRepository")
+ * @ORM\Table(name="seo")
  * @Form\Hydrator("Zend\Stdlib\Hydrator\ClassMethods")
  */
 class Seo implements SeoInterface

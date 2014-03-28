@@ -18,8 +18,32 @@ class SeoService implements ServiceLocatorAwareInterface
 
     use ServiceLocatorAwareTrait,
         SeoRepositoryTrait,
-        CityServiceTrait,
         GlobalOptionsTrait;
+
+    /**
+     * @var EntityManager
+     */
+    protected $entityManager = null;
+
+    /**
+     * @param EntityManager $entityManager
+     */
+    public function setEntityManager(EntityManager $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
+
+    /**
+     * @return EntityManager
+     */
+    public function getEntityManager()
+    {
+        if (null === $this->entityManager) {
+            $this->entityManager = $this->getServiceLocator()->get('entity_manager');
+        }
+
+        return $this->entityManager;
+    }
 
     /**
      * @param ServiceLocatorInterface $serviceLocator

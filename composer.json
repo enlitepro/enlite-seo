@@ -1,5 +1,6 @@
 {
     "name": "enlitepro/enlite-seo",
+    "description": "Adds an entity, a helper for control SEO tags in ZF2",
     "license": "MIT",
     "authors": [
         {

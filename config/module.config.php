@@ -22,7 +22,7 @@ return array(
         'configuration' => array(
             'orm_default' => array(
                 'string_functions' => [
-                    'REGEXP' => 'EnliteSeo\Doctrine\Query\Mysql\Regexp',
+                    'REGEXP' => 'EnliteSeo\Doctrine\Query\MySQL\Regexp',
                 ],
             )
         ),

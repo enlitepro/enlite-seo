@@ -17,7 +17,7 @@
  * $results = $query->getArrayResult();
  */
 
-namespace DoctrineExtensions\Query\Mysql;
+namespace EnliteSeo\Doctrine\Query\MySQL;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode,
     Doctrine\ORM\Query\Lexer;
