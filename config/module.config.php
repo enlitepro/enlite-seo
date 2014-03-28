@@ -18,11 +18,18 @@ return array(
                     __NAMESPACE__ . '\Entity' => __NAMESPACE__ . '_driver'
                 )
             )
-        )
-    ),
-    'view_manager' => array(
-        'template_path_stack' => array(
-            __DIR__ . '/../view',
+        ),
+        'configuration' => array(
+            'orm_default' => array(
+                'string_functions' => [
+                    'REGEXP' => 'EnliteSeo\Doctrine\Query\Mysql\Regexp',
+                ],
+            )
         ),
     ),
+//    'view_manager' => array(
+//        'template_path_stack' => array(
+//            __DIR__ . '/../view',
+//        ),
+//    ),
 );
